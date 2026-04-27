@@ -22,7 +22,6 @@ while True:
      #Fill in start     #Fill in end
     try:
         message = connectionSocket.recv(1024).decode() #Fill in start
-        print("RAW REQUEST:\n", message)     #Fill in end
         message_split = message.split()
         if len(message_split) <= 1:
             # Small connection from browser - ignore
